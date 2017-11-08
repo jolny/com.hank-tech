@@ -1,0 +1,137 @@
+{
+  "id": "HKZW-RGB01",
+  "name": {
+    "en": "RGB Bulb"
+  },
+  "zwave": {
+    "manufacturerId": [
+      520
+    ],
+    "productTypeId": [
+      256,
+      257
+    ],
+    "productId": [
+      4
+    ],
+    "productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1976/HKZW-RGB01%20Manual.pdf",
+    "pid": 1897,
+    "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16095230",
+    "learnmode": {
+      "image": "/drivers/HKZW-RGB01/assets/learnmode.svg",
+      "instruction": {
+        "en": "1.\tToggle the wall switch off and on 3 times quickly (within 3 seconds, the final switch position must be ON).\n2.\tIf the inclusion is successful, the RGB BULB will blink fast in green for less than 5 seconds and then keep on for 3 seconds.",
+        "nl": "Translation needed!"
+      }
+    },
+    "unlearnmode": {
+      "image": "/drivers/HKZW-RGB01/assets/learnmode.svg",
+      "instruction": {
+        "en": "Triple click the Z-button. If the exclusion is successful, the RGB BULB will blink fast in orange for less than 5 seconds and then keep on for 3 seconds.",
+        "nl": "Translation needed!"
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "RGB BULB will send a notification, based on the parameter 24 setting, to the associated nodes when the status of the bulb is changed. (Z-wave lifeline)",
+          "nl": "Translation needed!"
+        }
+      }
+    }
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "images": {
+    "large": "/drivers/HKZW-RGB01/assets/images/large.png",
+    "small": "/drivers/HKZW-RGB01/assets/images/small.png"
+  },
+  "settings": [
+    {
+      "id": "power_failure_reaction",
+      "zwave": {
+        "index": 21,
+        "size": 1
+      },
+      "type": "dropdown",
+      "value": "0",
+      "values": [
+        {
+          "id": "0",
+          "label": {
+            "en": "The bulb memorizes its state after power failure.",
+            "nl": "ranslation needed!"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "The bulb does not memorize its state after power failure. Associated device will be on after power failure.",
+            "nl": "ranslation needed!"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "The bulb does not memorize its state after power failure. Associated device will be off after power failure.",
+            "nl": "ranslation needed!"
+          }
+        }
+      ],
+      "label": {
+        "en": "Reaction after Power Failure",
+        "nl": "Translate me please"
+      },
+      "hint": {
+        "en": "Define how the RGB BULB will react after a power failure.",
+        "nl": "Translation needed!"
+      }
+    },
+    {
+      "id": "status_change_notification",
+      "zwave": {
+        "index": 24,
+        "size": 1
+      },
+      "type": "dropdown",
+      "value": "1",
+      "values": [
+        {
+          "id": "0",
+          "label": {
+            "en": "Disabled",
+            "nl": "Translate me"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "Send BASIC SET",
+            "nl": "Translate me"
+          }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Send BASIC SET only if the RGB BULB state is not changed by Z-wave command",
+          "nl": "Translate me"
+        }
+      }
+      ],
+      "label": {
+        "en": "Notification on Load status change",
+        "nl": "Translate me please"
+      },
+      "hint": {
+        "en": "Door/Window Sensor can reverse its value of BASIC SET when the alarm is triggered.",
+        "nl": "Door/Window Sensor kan de waarde van het BASIC SET commando omwisselen wanneer een alarm geactiveerd wordt."
+      }
+    }
+  ]
+}
