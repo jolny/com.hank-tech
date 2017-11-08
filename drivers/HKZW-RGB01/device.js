@@ -12,7 +12,7 @@ class Bulb_RGB01 extends ZwaveDevice {
 		this.printNode();
 
 		// register device capabilities
-		this.registerCapability('onoff', 'BASIC'); //BASIC SWITCH_MULTILEVEL
+		this.registerCapability('onoff', 'SWITCH_MULTILEVEL'); //BASIC SWITCH_MULTILEVEL
 		this.registerCapability('dim', 'SWITCH_MULTILEVEL');
 	}
 }

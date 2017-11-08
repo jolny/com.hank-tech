@@ -28,41 +28,41 @@
 	},
 	"tags": {
 		"en": [
-      "scene controller",
-      "remote",
-      "remote control",
-      "central scene",
-      "scenes",
-      "motion detection",
-      "motion",
-      "alarm",
-      "door",
-      "window",
-      "sensor",
-      "switch",
-      "smart plug",
-      "USB"
-    ],
+			"scene controller",
+			"remote",
+			"remote control",
+			"central scene",
+			"scenes",
+			"motion detection",
+			"motion",
+			"alarm",
+			"door",
+			"window",
+			"sensor",
+			"switch",
+			"smart plug",
+			"USB"
+		],
 		"nl": [
-      "scene controller",
-      "afstandsbediening",
-      "central scene",
-      "scenes",
-      "bewegingsdetectie",
-      "beweging",
-      "alarm",
-      "deur",
-      "raam",
-      "sensor",
-      "schakelaar",
-      "USB"
-    ]
+			"scene controller",
+			"afstandsbediening",
+			"central scene",
+			"scenes",
+			"bewegingsdetectie",
+			"beweging",
+			"alarm",
+			"deur",
+			"raam",
+			"sensor",
+			"schakelaar",
+			"USB"
+		]
 	},
 	"category": [
-    "appliances",
-    "lights",
-    "security"
-  ],
+		"appliances",
+		"lights",
+		"security"
+	],
 	"flow": {
 		"triggers": [
 			{
@@ -80,8 +80,8 @@
 						"name": "device",
 						"type": "device",
 						"filter": "driver_id=HKZW-SCN01|HKZW-SCN04"
-          }
-        ],
+					}
+				],
 				"tokens": [
 					{
 						"name": "button",
@@ -91,7 +91,7 @@
 							"nl": "knop"
 						},
 						"example": "0"
-          },
+					},
 					{
 						"name": "scene",
 						"type": "string",
@@ -100,9 +100,9 @@
 							"nl": "scene"
 						},
 						"example": "Button pressed (test)"
-          }
-        ]
-      },
+					}
+				]
+			},
 			{
 				"id": "battery_alarm",
 				"title": {
@@ -114,9 +114,9 @@
 						"name": "device",
 						"type": "device",
 						"filter": "driver_id=HKZW-SCN01|HKZW-SCN04"
-          }
-        ]
-      },
+					}
+				]
+			},
 			{
 				"id": "SCN01_scene",
 				"title": {
@@ -132,7 +132,7 @@
 						"name": "device",
 						"type": "device",
 						"filter": "driver_id=HKZW-SCN01"
-          },
+					},
 					{
 						"name": "button",
 						"type": "dropdown",
@@ -143,9 +143,9 @@
 									"en": "Button 1 (Night)",
 									"nl": "Knop 1 (Nacht)"
 								}
-              }
-            ]
-          },
+							}
+						]
+					},
 					{
 						"name": "scene",
 						"type": "dropdown",
@@ -156,25 +156,25 @@
 									"en": "Pressed 1x",
 									"nl": "1x ingedrukt"
 								}
-              },
+							},
 							{
 								"id": "Key Held Down",
 								"label": {
 									"en": "Held Down",
 									"nl": "Lang ingedrukt"
 								}
-              },
+							},
 							{
 								"id": "Key Released",
 								"label": {
 									"en": "Released",
 									"nl": "Losgelaten"
 								}
-              }
-            ]
-          }
-        ]
-      },
+							}
+						]
+					}
+				]
+			},
 			{
 				"id": "SCN04_scene",
 				"title": {
@@ -190,7 +190,7 @@
 						"name": "device",
 						"type": "device",
 						"filter": "driver_id=HKZW-SCN04"
-          },
+					},
 					{
 						"name": "button",
 						"type": "dropdown",
@@ -201,30 +201,30 @@
 									"en": "Button 1 (Night)",
 									"nl": "Knop 1 (Nacht)"
 								}
-              },
+							},
 							{
 								"id": "2",
 								"label": {
 									"en": "Button 2 (People)",
 									"nl": "Knop 2 (Mensen)"
 								}
-              },
+							},
 							{
 								"id": "3",
 								"label": {
 									"en": "Button 3 (Circle)",
 									"nl": "Knop 3 (Cirkel)"
 								}
-              },
+							},
 							{
 								"id": "4",
 								"label": {
 									"en": "Button 4 (Power)",
 									"nl": "Knop 4 (Power)"
 								}
-              }
-            ]
-          },
+							}
+						]
+					},
 					{
 						"name": "scene",
 						"type": "dropdown",
@@ -235,26 +235,26 @@
 									"en": "Pressed 1x",
 									"nl": "1x ingedrukt"
 								}
-              },
+							},
 							{
 								"id": "Key Held Down",
 								"label": {
 									"en": "Held Down",
 									"nl": "Lang ingedrukt"
 								}
-              },
+							},
 							{
 								"id": "Key Released",
 								"label": {
 									"en": "Released",
 									"nl": "Losgelaten"
 								}
-              }
-            ]
-          }
-        ]
-      }
-    ],
+							}
+						]
+					}
+				]
+			}
+		],
 		"actions": [
 			{
 				"id": "SO0x_reset_meter",
@@ -271,165 +271,165 @@
 						"name": "device",
 						"type": "device",
 						"filter": "driver_id=HKZW-SO0x"
-          }
-        ]
-      }
-    ]
-  },
-  "drivers": [
-      {
-        "id": "HKZW-RGB01",
-        "name": {
-          "en": "RGB Bulb"
-        },
-        "zwave": {
-          "manufacturerId": [
-            520
-          ],
-          "productTypeId": [
-            256,
-            257
-          ],
-          "productId": [
-            4
-          ],
-          "productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1976/HKZW-RGB01%20Manual.pdf",
-          "pid": 1897,
-          "imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16095230",
-          "learnmode": {
-            "image": "/drivers/HKZW-RGB01/assets/learnmode.svg",
-            "instruction": {
-              "en": "1.\tToggle the wall switch off and on 3 times quickly (within 3 seconds, the final switch position must be ON).\n2.\tIf the inclusion is successful, the RGB BULB will blink fast in green for less than 5 seconds and then keep on for 3 seconds.",
-              "nl": "Translation needed!"
-            }
-          },
-          "unlearnmode": {
-            "image": "/drivers/HKZW-RGB01/assets/learnmode.svg",
-            "instruction": {
-              "en": "Triple click the Z-button. If the exclusion is successful, the RGB BULB will blink fast in orange for less than 5 seconds and then keep on for 3 seconds.",
-              "nl": "Translation needed!"
-            }
-          },
-          "associationGroups": [
-            1
-          ],
-          "associationGroupsOptions": {
-            "1": {
-              "hint": {
-                "en": "RGB BULB will send a notification, based on the parameter 24 setting, to the associated nodes when the status of the bulb is changed. (Z-wave lifeline)",
-                "nl": "Translation needed!"
-              }
-            }
-          }
-        },
-        "class": "light",
-        "capabilities": [
-          "onoff",
-          "dim"
-        ],
-        "images": {
-          "large": "/drivers/HKZW-RGB01/assets/images/large.png",
-          "small": "/drivers/HKZW-RGB01/assets/images/small.png"
-        },
-        "settings": [
-          {
-            "id": "power_failure_reaction",
-            "zwave": {
-              "index": 21,
-              "size": 1
-            },
-            "type": "dropdown",
-            "value": "0",
-            "values": [
-              {
-                "id": "0",
-                "label": {
-                  "en": "The bulb memorizes its state after power failure.",
-                  "nl": "ranslation needed!"
-                }
-              },
-              {
-                "id": "1",
-                "label": {
-                  "en": "The bulb does not memorize its state after power failure. Associated device will be on after power failure.",
-                  "nl": "ranslation needed!"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "The bulb does not memorize its state after power failure. Associated device will be off after power failure.",
-                  "nl": "ranslation needed!"
-                }
-              }
-            ],
-            "label": {
-              "en": "Reaction after Power Failure",
-              "nl": "Translate me please"
-            },
-            "hint": {
-              "en": "Define how the RGB BULB will react after a power failure.",
-              "nl": "Translation needed!"
-            }
-          },
-          {
-            "id": "status_change_notification",
-            "zwave": {
-              "index": 24,
-              "size": 1
-            },
-            "type": "dropdown",
-            "value": "1",
-            "values": [
-              {
-                "id": "0",
-                "label": {
-                  "en": "Disabled",
-                  "nl": "Translate me"
-                }
-              },
-              {
-                "id": "1",
-                "label": {
-                  "en": "Send BASIC SET",
-                  "nl": "Translate me"
-                }
-            },
-            {
-              "id": "2",
-              "label": {
-                "en": "Send BASIC SET only if the RGB BULB state is not changed by Z-wave command",
-                "nl": "Translate me"
-              }
-            }
-            ],
-            "label": {
-              "en": "Notification on Load status change",
-              "nl": "Translate me please"
-            },
-            "hint": {
-              "en": "Door/Window Sensor can reverse its value of BASIC SET when the alarm is triggered.",
-              "nl": "Door/Window Sensor kan de waarde van het BASIC SET commando omwisselen wanneer een alarm geactiveerd wordt."
-            }
-          }
-        ]
-      },
-    {
-      "id": "HKZW-DWS01",
-      "name": {
-        "en": "Door/Window Sensor"
-      },
-      "zwave": {
-        "manufacturerId": [
-          520
-        ],
+					}
+				]
+			}
+		]
+	},
+	"drivers": [
+		{
+			"id": "HKZW-RGB01",
+			"name": {
+				"en": "RGB Bulb"
+			},
+			"zwave": {
+				"manufacturerId": [
+					520
+				],
 				"productTypeId": [
-          512,
-          513
-        ],
+					256,
+					257
+				],
 				"productId": [
-          8
-        ],
+					4
+				],
+				"productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1976/HKZW-RGB01%20Manual.pdf",
+				"pid": 1897,
+				"imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16095230",
+				"learnmode": {
+					"image": "/drivers/HKZW-RGB01/assets/learnmode.svg",
+					"instruction": {
+						"en": "1.\tToggle the wall switch off and on 3 times quickly (within 3 seconds, the final switch position must be ON).\n2.\tIf the inclusion is successful, the RGB BULB will blink fast in green for less than 5 seconds and then keep on for 3 seconds.",
+						"nl": "Translation needed!"
+					}
+				},
+				"unlearnmode": {
+					"image": "/drivers/HKZW-RGB01/assets/learnmode.svg",
+					"instruction": {
+						"en": "Triple click the Z-button. If the exclusion is successful, the RGB BULB will blink fast in orange for less than 5 seconds and then keep on for 3 seconds.",
+						"nl": "Translation needed!"
+					}
+				},
+				"associationGroups": [
+					1
+				],
+				"associationGroupsOptions": {
+					"1": {
+						"hint": {
+							"en": "RGB BULB will send a notification, based on the parameter 24 setting, to the associated nodes when the status of the bulb is changed. (Z-wave lifeline)",
+							"nl": "Translation needed!"
+						}
+					}
+				}
+			},
+			"class": "light",
+			"capabilities": [
+				"onoff",
+				"dim"
+			],
+			"images": {
+				"large": "/drivers/HKZW-RGB01/assets/images/large.png",
+				"small": "/drivers/HKZW-RGB01/assets/images/small.png"
+			},
+			"settings": [
+				{
+					"id": "power_failure_reaction",
+					"zwave": {
+						"index": 21,
+						"size": 1
+					},
+					"type": "dropdown",
+					"value": "0",
+					"values": [
+						{
+							"id": "0",
+							"label": {
+								"en": "The bulb memorizes its state after power failure.",
+								"nl": "ranslation needed!"
+							}
+						},
+						{
+							"id": "1",
+							"label": {
+								"en": "The bulb does not memorize its state after power failure. Associated device will be on after power failure.",
+								"nl": "ranslation needed!"
+							}
+						},
+						{
+							"id": "2",
+							"label": {
+								"en": "The bulb does not memorize its state after power failure. Associated device will be off after power failure.",
+								"nl": "ranslation needed!"
+							}
+						}
+					],
+					"label": {
+						"en": "Reaction after Power Failure",
+						"nl": "Translate me please"
+					},
+					"hint": {
+						"en": "Define how the RGB BULB will react after a power failure.",
+						"nl": "Translation needed!"
+					}
+				},
+				{
+					"id": "status_change_notification",
+					"zwave": {
+						"index": 24,
+						"size": 1
+					},
+					"type": "dropdown",
+					"value": "1",
+					"values": [
+						{
+							"id": "0",
+							"label": {
+								"en": "Disabled",
+								"nl": "Translate me"
+							}
+						},
+						{
+							"id": "1",
+							"label": {
+								"en": "Send BASIC SET",
+								"nl": "Translate me"
+							}
+						},
+						{
+							"id": "2",
+							"label": {
+								"en": "Send BASIC SET only if the RGB BULB state is not changed by Z-wave command",
+								"nl": "Translate me"
+							}
+						}
+					],
+					"label": {
+						"en": "Notification on Load status change",
+						"nl": "Translate me please"
+					},
+					"hint": {
+						"en": "Door/Window Sensor can reverse its value of BASIC SET when the alarm is triggered.",
+						"nl": "Door/Window Sensor kan de waarde van het BASIC SET commando omwisselen wanneer een alarm geactiveerd wordt."
+					}
+				}
+			]
+		},
+		{
+			"id": "HKZW-DWS01",
+			"name": {
+				"en": "Door/Window Sensor"
+			},
+			"zwave": {
+				"manufacturerId": [
+					520
+				],
+				"productTypeId": [
+					512,
+					513
+				],
+				"productId": [
+					8
+				],
 				"productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1896/HKZW-DWS01_Product%20Manual%20.pdf",
 				"pid": 1896,
 				"imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16085158",
@@ -448,8 +448,8 @@
 					}
 				},
 				"associationGroups": [
-          1
-        ],
+					1
+				],
 				"associationGroupsOptions": {
 					"1": {
 						"hint": {
@@ -467,11 +467,11 @@
 			},
 			"class": "sensor",
 			"capabilities": [
-        "alarm_contact",
-        "alarm_tamper",
-        "alarm_battery",
-        "measure_battery"
-      ],
+				"alarm_contact",
+				"alarm_tamper",
+				"alarm_battery",
+				"measure_battery"
+			],
 			"images": {
 				"large": "/drivers/HKZW-DWS01/assets/images/large.png",
 				"small": "/drivers/HKZW-DWS01/assets/images/small.png"
@@ -492,15 +492,15 @@
 								"en": "BASIC_SET is not send during alarm (default)",
 								"nl": "BASIC_SET wordt niet gestuurd tijdens een alarm (standaard)"
 							}
-            },
+						},
 						{
 							"id": "1",
 							"label": {
 								"en": "BASIC_SET is send during alarm",
 								"nl": "BASIC_SET wordt gestuurd tijdens een alarm"
 							}
-            }
-          ],
+						}
+					],
 					"label": {
 						"en": "Enable BASIC SET command",
 						"nl": "BASIC SET command inschakelen"
@@ -509,7 +509,7 @@
 						"en": "Door/Window Sensor can send BASIC SET command to nodes associated with group 2.",
 						"nl": "Door/Window Sensor kan BASIC SET commando's versturen naar nodes gekoppeld aan groep 2."
 					}
-        },
+				},
 				{
 					"id": "BASIC_SET_reversed",
 					"zwave": {
@@ -525,15 +525,15 @@
 								"en": "ON when contact opened, OFF when closed (default)",
 								"nl": "AAN bij open contact, UIT bij gesloten (standaard)"
 							}
-            },
+						},
 						{
 							"id": "1",
 							"label": {
 								"en": "OFF when contact opened, ON when closed",
 								"nl": "UIT bij open contact, AAN bij gesloten"
 							}
-            }
-          ],
+						}
+					],
 					"label": {
 						"en": "Reverse BASIC SET command",
 						"nl": "BASIC SET command logica"
@@ -542,7 +542,7 @@
 						"en": "Door/Window Sensor can reverse its value of BASIC SET when the alarm is triggered.",
 						"nl": "Door/Window Sensor kan de waarde van het BASIC SET commando omwisselen wanneer een alarm geactiveerd wordt."
 					}
-        },
+				},
 				{
 					"id": "low_battery",
 					"zwave": {
@@ -563,9 +563,9 @@
 						"en": "This parameter defines a battery level to trigger the battery alarm.\nDefault: 20 %, Range: 10 - 50 %",
 						"nl": "Deze parameter bepaald het batterijniveau waarop het batterij alarm ingeschakeld wordt.\nStandaard: 20 %, Bereik: 10 - 50 %"
 					}
-        }
-      ]
-    },
+				}
+			]
+		},
 		{
 			"id": "HKZW-MS01",
 			"name": {
@@ -573,15 +573,15 @@
 			},
 			"zwave": {
 				"manufacturerId": [
-          520
-        ],
+					520
+				],
 				"productTypeId": [
-          512,
-          513
-        ],
+					512,
+					513
+				],
 				"productId": [
-          6
-        ],
+					6
+				],
 				"productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1891/HKZW-SO05%20Manual.pdf",
 				"pid": 2305,
 				"imageRemotePath": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/2305/HKZW-MS01%20MANUL.pdf",
@@ -601,8 +601,8 @@
 				},
 				"wakeUpInterval": 0,
 				"associationGroups": [
-          1
-        ],
+					1
+				],
 				"associationGroupsOptions": {
 					"1": {
 						"hint": {
@@ -620,14 +620,14 @@
 			},
 			"class": "sensor",
 			"capabilities": [
-        "alarm_motion",
-        "measure_luminance",
-        "measure_temperature",
-        "measure_humidity",
-        "alarm_tamper",
-        "alarm_battery",
-        "measure_battery"
-      ],
+				"alarm_motion",
+				"measure_luminance",
+				"measure_temperature",
+				"measure_humidity",
+				"alarm_tamper",
+				"alarm_battery",
+				"measure_battery"
+			],
 			"images": {
 				"large": "/drivers/HKZW-MS01/assets/images/large.png",
 				"small": "/drivers/HKZW-MS01/assets/images/small.png"
@@ -653,7 +653,7 @@
 						"en": "Hoe hoger de waarde is, hoe gevoeliger de PIR sensor reageert.\nStandaard: 8\nBereik: 0 (uitgeschakeld), 1 - 8"
 					},
 					"_size": 1
-        },
+				},
 				{
 					"id": "blind_time",
 					"zwave": {
@@ -674,7 +674,7 @@
 					},
 					"_size": 2,
 					"type": "number"
-        },
+				},
 				{
 					"id": "BASIC_SET_command",
 					"zwave": {
@@ -691,7 +691,7 @@
 						"en": "Multisensor can send BASIC ON/OFF COMMAND CLASS to nodes associated with group 2.",
 						"nl": "Multisensor kan BASIC SET commando's versturen naar nodes gekoppeld aan groep 2."
 					}
-        },
+				},
 				{
 					"id": "BASIC_SET_reversed",
 					"zwave": {
@@ -707,15 +707,15 @@
 								"en": "ON when motion alarm triggered, OFF when canceled (default)",
 								"nl": "AAN bij bewegingsdetectie, UIT bij annulering (standaard)"
 							}
-            },
+						},
 						{
 							"id": "1",
 							"label": {
 								"en": "OFF when motion alarm triggered, ON when canceled (default)",
 								"nl": "UIT bij bewegingsdetectie, AAN bij annulering (standaard)"
 							}
-            }
-          ],
+						}
+					],
 					"label": {
 						"en": "Reverse BASIC SET command",
 						"nl": "BASIC SET command logica"
@@ -724,7 +724,7 @@
 						"en": "Multisensor can reverse its value of BASIC SET when the alarm is triggered.",
 						"nl": "Multisensor kan de waarde van het BASIC SET commando omwisselen wanneer een alarm geactiveerd wordt."
 					}
-        },
+				},
 				{
 					"id": "low_battery",
 					"zwave": {
@@ -745,7 +745,7 @@
 						"en": "Define a battery level as the “low battery”.",
 						"nl": "Deze parameter bepaald het batterijniveau waarop het batterij alarm ingeschakeld wordt."
 					}
-        },
+				},
 				{
 					"id": "battery_interval",
 					"zwave": {
@@ -765,7 +765,7 @@
 						"en": "The interval of sending battery report to association device (Group Lifeline). \r\nThe reports are sent even if there are no changes in the battery level.\nDefault: 1800 s, Range: 0 = disabled, 5 - 2678400 s",
 						"nl": "Het interval waarop batterij reports naar de gekoppelde nodes wordt gestuurd (Group Lifeline). \r\nDe reports worden ook gestuurd wanneer het batterijniveau ongewijzigd is.\nStandaard: 1800 s, Bereik: 0 = uitgeschakeld, 5 - 2678400 s"
 					}
-        },
+				},
 				{
 					"id": "temperature_interval",
 					"zwave": {
@@ -786,7 +786,7 @@
 						"en": "The interval of sending temperature report to association device (Group Lifeline). \r\nThe reports are sent even if there are no changes in the temperature level.\nDefault: 1800 s, Range: 0 = disabled, 5 - 2678400 s",
 						"nl": "Het interval waarop temperatuur reports naar de gekoppelde nodes wordt gestuurd (Group Lifeline). \r\nDe reports worden ook gestuurd wanneer de temperatuur ongewijzigd is.\nStandaard: 1800 s, Bereik: 0 = uitgeschakeld, 5 - 2678400 s"
 					}
-        },
+				},
 				{
 					"id": "humidity_interval",
 					"zwave": {
@@ -807,7 +807,7 @@
 						"en": "The interval of sending Humidity report to association device (Group Lifeline). \r\nThe reports are sent even if there are no changes in the humidity level.\nDefault: 1800 s, Range: 0 = disabled, 5 - 2678400 s",
 						"nl": "Het interval waarop luchtvochtigheid reports naar de gekoppelde nodes wordt gestuurd (Group Lifeline). \r\nDe reports worden ook gestuurd wanneer de luchtvochtigheid ongewijzigd is.\nStandaard: 1800 s, Bereik: 0 = uitgeschakeld, 5 - 2678400 s"
 					}
-        },
+				},
 				{
 					"id": "luminance_interval",
 					"zwave": {
@@ -828,7 +828,7 @@
 						"en": "The interval of sending luminance report to association device (Group Lifeline). The reports are sent even if there are no changes in the luminance level.\nDefault: 1800 s, Range: 0 = disabled, 5 - 2678400 s",
 						"nl": "Het interval waarop luchtvochtigheid reports naar de gekoppelde nodes wordt gestuurd (Group Lifeline). \r\nDe reports worden ook gestuurd wanneer de luchtvochtigheid ongewijzigd is.\n Standaard: 1800 s, Bereik: 0 = uitgeschakeld, 5 - 2678400 s"
 					}
-        },
+				},
 				{
 					"id": "battery_threshold",
 					"zwave": {
@@ -849,7 +849,7 @@
 						"en": "Change in battery level resulting in battery report being sent to the main controller.\nDefault: 10 %, Range: 0  = disabled, 1 - 100 %",
 						"nl": "Verandering van batterijniveau dat resulteert in een batterij rapportage naar de hoofd controller.\nStandaard: 10 %, Bereik: 0  = uitgeschakeld, 1 - 100 %"
 					}
-        },
+				},
 				{
 					"id": "temperature_threshold",
 					"zwave": {
@@ -870,7 +870,7 @@
 						"en": "Change in temperature level resulting in battery report being sent to the main controller.\nDefault: 20 (2,0 °C), Range: 0  = disabled, 1 - 255 (0.1 - 25,5 °C)",
 						"nl": "Verandering van temperatuur dat resulteert in een rapportage naar de hoofd controller.\nStandaard: 20 (2,0 °C), Bereik: 0  = uitgeschakeld, 1 - 255 (0.1 - 25,5 °C)"
 					}
-        },
+				},
 				{
 					"id": "humidity_threshold",
 					"zwave": {
@@ -891,7 +891,7 @@
 						"en": "The parameter determines the change in humidity level resulting in humidity report being sent to the main controller.\nDefault: 5 %, Range: 0 = disabled, 1 - 255 %",
 						"nl": "Verandering van luchtvochtigheid dat resulteert in een rapportage naar de hoofd controller.\nStandaard: 5 %, Bereik: 0  = uitgeschakeld, 1 - 255 %"
 					}
-        },
+				},
 				{
 					"id": "illumination_threshold",
 					"zwave": {
@@ -912,9 +912,9 @@
 						"en": "The parameter determines the change in luminance level resulting in luminance report being sent to the main controller.\nDefault: 200 Lux, Range: 0 = disabled, 1 - 65535 Lux",
 						"nl": "Verandering van lichtsterkte dat resulteert in een rapportage naar de hoofd controller.\nStandaard: 200 Lux, Bereik: 0  = uitgeschakeld, 1 - 65535 Lux"
 					}
-        }
-      ]
-    },
+				}
+			]
+		},
 		{
 			"id": "HKZW-SCN01",
 			"name": {
@@ -922,15 +922,15 @@
 			},
 			"zwave": {
 				"manufacturerId": [
-          520
-        ],
+					520
+				],
 				"productTypeId": [
-          512,
-          513
-        ],
+					512,
+					513
+				],
 				"productId": [
-          9
-        ],
+					9
+				],
 				"productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1918/HKZW-SCN01_MANUL.pdf",
 				"pid": 1918,
 				"imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16085175",
@@ -949,8 +949,8 @@
 					}
 				},
 				"associationGroups": [
-          1
-        ],
+					1
+				],
 				"associationGroupsOptions": {
 					"1": {
 						"hint": {
@@ -974,9 +974,9 @@
 			},
 			"class": "sensor",
 			"capabilities": [
-        "measure_battery",
-        "alarm_battery"
-      ],
+				"measure_battery",
+				"alarm_battery"
+			],
 			"images": {
 				"large": "/drivers/HKZW-SCN01/assets/images/large.png",
 				"small": "/drivers/HKZW-SCN01/assets/images/small.png"
@@ -985,21 +985,21 @@
 				"components": [
 					{
 						"id": "icon"
-          },
+					},
 					{
 						"id": "battery",
 						"capabilities": [
-              "measure_battery"
-            ],
+							"measure_battery"
+						],
 						"options": {
 							"showTitle": true
 						}
-          },
+					},
 					{
 						"id": "sensor",
 						"capabilities": [
-              "alarm_battery"
-            ],
+							"alarm_battery"
+						],
 						"options": {
 							"icons": {
 								"Battery_Alarm": "/drivers/HKZW-SCN01/assets/alarm_battery.svg"
@@ -1009,8 +1009,8 @@
 								"invert": false
 							}
 						}
-          }
-        ]
+					}
+				]
 			},
 			"settings": [
 				{
@@ -1029,9 +1029,9 @@
 						"en": "Lock/unlock all configuration parameters.",
 						"nl": "In or uitschakelen van alle configuratie parameters."
 					}
-        }
-      ]
-    },
+				}
+			]
+		},
 		{
 			"id": "HKZW-SCN04",
 			"name": {
@@ -1039,15 +1039,15 @@
 			},
 			"zwave": {
 				"manufacturerId": [
-          520
-        ],
+					520
+				],
 				"productTypeId": [
-          512,
-          513
-        ],
+					512,
+					513
+				],
 				"productId": [
-          11
-        ],
+					11
+				],
 				"productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1968/HKZW-SCN04%20Manual.pdf",
 				"pid": 1968,
 				"imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16095219",
@@ -1066,8 +1066,8 @@
 					}
 				},
 				"associationGroups": [
-          1
-        ],
+					1
+				],
 				"associationGroupsOptions": {
 					"1": {
 						"hint": {
@@ -1127,9 +1127,9 @@
 			},
 			"class": "sensor",
 			"capabilities": [
-        "measure_battery",
-        "alarm_battery"
-      ],
+				"measure_battery",
+				"alarm_battery"
+			],
 			"images": {
 				"large": "/drivers/HKZW-SCN04/assets/images/large.png",
 				"small": "/drivers/HKZW-SCN04/assets/images/small.png"
@@ -1138,21 +1138,21 @@
 				"components": [
 					{
 						"id": "icon"
-          },
+					},
 					{
 						"id": "battery",
 						"capabilities": [
-              "measure_battery"
-            ],
+							"measure_battery"
+						],
 						"options": {
 							"showTitle": true
 						}
-          },
+					},
 					{
 						"id": "sensor",
 						"capabilities": [
-              "alarm_battery"
-            ],
+							"alarm_battery"
+						],
 						"options": {
 							"icons": {
 								"Battery_Alarm": "/drivers/HKZW-SCN04/assets/alarm_battery.svg"
@@ -1162,8 +1162,8 @@
 								"invert": false
 							}
 						}
-          }
-        ]
+					}
+				]
 			},
 			"settings": [
 				{
@@ -1182,9 +1182,9 @@
 						"en": "Lock/unlock all configuration parameters.",
 						"nl": "In or uitschakelen van alle configuratie parameters."
 					}
-        }
-      ]
-    },
+				}
+			]
+		},
 		{
 			"id": "HKZW-SO0x",
 			"name": {
@@ -1192,15 +1192,15 @@
 			},
 			"zwave": {
 				"manufacturerId": [
-          520
-        ],
+					520
+				],
 				"productTypeId": [
-          256,
-          257
-        ],
+					256,
+					257
+				],
 				"productId": [
-          10
-        ],
+					10
+				],
 				"productDocumentation": "http://products.z-wavealliance.org/ProductManual/File?folder=&filename=Manuals/1891/HKZW-SO05%20Manual.pdf",
 				"pid": 1891,
 				"imageRemotePath": "http://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-16075153",
@@ -1219,8 +1219,8 @@
 					}
 				},
 				"associationGroups": [
-          1
-        ],
+					1
+				],
 				"associationGroupsOptions": {
 					"1": {
 						"hint": {
@@ -1231,12 +1231,12 @@
 			},
 			"class": "socket",
 			"capabilities": [
-        "onoff",
-        "meter_power",
-        "measure_power",
-        "measure_current",
-        "measure_voltage"
-      ],
+				"onoff",
+				"meter_power",
+				"measure_power",
+				"measure_current",
+				"measure_voltage"
+			],
 			"images": {
 				"large": "/drivers/HKZW-SO0x/assets/images/large.png",
 				"small": "/drivers/HKZW-SO0x/assets/images/small.png"
@@ -1246,25 +1246,25 @@
 					{
 						"id": "icon",
 						"capabilities": [
-              "onoff"
-            ]
-          },
+							"onoff"
+						]
+					},
 					{
 						"id": "sensor",
 						"capabilities": [
-              "meter_power",
-              "measure_power",
-              "measure_current",
-              "measure_voltage"
-            ]
-          },
+							"meter_power",
+							"measure_power",
+							"measure_current",
+							"measure_voltage"
+						]
+					},
 					{
 						"id": "toggle",
 						"capabilities": [
-              "onoff"
-            ]
-          }
-        ]
+							"onoff"
+						]
+					}
+				]
 			},
 			"settings": [
 				{
@@ -1283,7 +1283,7 @@
 						"en": "Smart Plug keep detecting the load power, once the AC current exceeds 16.5A for more than 5s, smart plug's relay will turn off.",
 						"nl": "Smart Plug houdt actief de belasting in de gaten, wanneer de belasting 16.5A overschrijd wordt de smart plug preventief uitgeschakeld."
 					}
-        },
+				},
 				{
 					"id": "Power_off_status",
 					"zwave": {
@@ -1307,23 +1307,23 @@
 								"en": "Restores state after a power failure (default)",
 								"nl": "Herstelt toestand na spanningsuitval (default)"
 							}
-            },
+						},
 						{
 							"id": "1",
 							"label": {
 								"en": "ON after a power failure",
 								"nl": "AAN na spanningsuitval"
 							}
-            },
+						},
 						{
 							"id": "2",
 							"label": {
 								"en": "OFF after a power failure",
 								"nl": "UIT na spanningsuitval"
 							}
-            }
-          ]
-        },
+						}
+					]
+				},
 				{
 					"id": "Load_notification",
 					"zwave": {
@@ -1347,22 +1347,22 @@
 								"en": "Disabled (default)",
 								"nl": "Uitgeschakeld (standaard)"
 							}
-            },
+						},
 						{
 							"id": "1",
 							"label": {
 								"en": "Send BASIC report",
 								"nl": "Stuur BASIC reportage"
 							}
-            },
+						},
 						{
 							"id": "2",
 							"label": {
 								"en": "Stuur BASIC report alleen wanneer de toestand handmatig is aangepast (knop ingedrukt ipv Z-wave commando)"
 							}
-            }
-          ]
-        },
+						}
+					]
+				},
 				{
 					"id": "Indicator_mode",
 					"zwave": {
@@ -1386,16 +1386,16 @@
 								"en": "Smart plug will work in indicator mode (default)",
 								"nl": "Smart plug werkt indicator modus (default)"
 							}
-            },
+						},
 						{
 							"id": "1",
 							"label": {
 								"en": "Smart plug will work in indicator mode for 5 seconds after a load change",
 								"nl": "Smart plug werkt in indicator mode voor 5 seconds na een wijziging van de belasting"
 							}
-            }
-          ]
-        },
+						}
+					]
+				},
 				{
 					"id": "Power_Threshold_W",
 					"zwave": {
@@ -1417,7 +1417,7 @@
 						"en": "Change value of load power exceeds the setting threshold, the smart plug will send meter report to associated device (Group Lifeline).\nDefault: 50, Range: 5 - 65535, 0 = disabled (W)",
 						"nl": "Minimale Veranderingvan vermogen overschrijd de ingestelde drempelwaarde, de smart plug stuurt een meter raport naar de gekoppelde nodes (Group Lifeline).\nStandaard: 50, Bereik: 5 - 65535, 0 = uitgeschakeld (W)"
 					}
-        },
+				},
 				{
 					"id": "Power_Threshold_pro",
 					"zwave": {
@@ -1438,7 +1438,7 @@
 						"en": "Change value of load power exceeds the setting threshold, the smart plug will send meter report to associated device (Group Lifeline).\nDefault: 10, Range: 5 - 100, 0 = disabled (%)",
 						"nl": "Minimale Veranderingvan vermogen overschrijd de ingestelde drempelwaarde, de smart plug stuurt een meter raport naar de gekoppelde nodes (Group Lifeline).\nStandaard: 10, Bereik: 5 - 100, 0 = uitgeschakeld (%)"
 					}
-        },
+				},
 				{
 					"id": "Power_interval",
 					"zwave": {
@@ -1459,7 +1459,7 @@
 						"en": "The interval of sending meter report(in term of wattage) to associated device (Group Lifeline). \nDefault: 30, Range: 5 - 2678400, 0 = disabled (s)",
 						"nl": "Het interval voor het versturen van meter report (in termen van wattage) naar de gekoppelde nodes (Group Lifeline). \nStandaard: 30, Bereik: 5 - 2678400, 0 = uitgeschakeld (s)"
 					}
-        },
+				},
 				{
 					"id": "Meter_interval",
 					"zwave": {
@@ -1480,7 +1480,7 @@
 						"en": "The interval of sending meter report(in term of kWh) to associated device (Group Lifeline).\nDefault: 300, Range: 5 - 2678400, 0 = disabled (s)",
 						"nl": "Het interval voor het versturen van meter report (in termen van kWh) naar de gekoppelde nodes (Group Lifeline). \nStandaard: 300, Bereik: 5 - 2678400, 0 = uitgeschakeld (s)"
 					}
-        },
+				},
 				{
 					"id": "Voltage_interval",
 					"zwave": {
@@ -1501,7 +1501,7 @@
 						"en": "The interval of sending meter report(in term of voltage) to associated device (Group Lifeline).\nDefault: 0 (disabled), Range: 5 - 2678400, 0 = disabled (s)",
 						"nl": "Het interval voor het versturen van meter report (in termen van voltage) naar de gekoppelde nodes (Group Lifeline). \nStandaard: 0 (uitgeschakeld), Bereik: 5 - 2678400, 0 = uitgeschakeld (s)"
 					}
-        },
+				},
 				{
 					"id": "Current_interval",
 					"zwave": {
@@ -1522,8 +1522,8 @@
 						"en": "The interval of sending meter report(in term of current) to associated device (Group Lifeline).\nDefault: 0 (disabled), Range: 5 - 2678400, 0 = disabled (s)",
 						"nl": "Het interval voor het versturen van meter report (in termen van stroom) naar de gekoppelde nodes (Group Lifeline). \nStandaard: 0 (uitgeschakeld), Bereik: 5 - 2678400, 0 = uitgeschakeld (s)"
 					}
-        }
-      ]
-    }
-  ]
+				}
+			]
+		}
+	]
 }
